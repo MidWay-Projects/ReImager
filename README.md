@@ -1,2 +1,2 @@
 # ReImager
-Podmieniaj zdjęcia na stronach.
+Nie odpowiadamy za szkody które powstały poprzez ten program.
