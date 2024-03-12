@@ -13,7 +13,6 @@
 // @homepage https://raw.github.com/MidWay-Projects/ReImager/tree/main
 // @supportURL https://github.com/MidWay-Projects/ReImager/issues
 // ==/UserScript==
-
 document.addEventListener('DOMContentLoaded', function() {
   const images = document.querySelectorAll('img');
   images.forEach(img => {
@@ -23,17 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.width = originalWidth + 'px';
     img.style.height = originalHeight + 'px';
   });
-  
-  const css = `
-    img {
-      transition: all 0.5s ease;
-    }
-  `;
-  const style = document.createElement('style');
-  style.textContent = css;
-  document.head.appendChild(style);
-  
-  console.log("reimaged");
 });
-
+console.log("ReImage");
 // >>>>>>> Dziala tylko na Tampermokney
