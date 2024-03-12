@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   images.forEach(img => {
     const originalWidth = img.offsetWidth;
     const originalHeight = img.offsetHeight;
-    img.src = 'https://reimager.midway.ovh';
+    img.src = 'https://reimager.midway.ovh/reimager.png';
     img.style.width = originalWidth + 'px';
     img.style.height = originalHeight + 'px';
   });
