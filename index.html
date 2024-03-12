@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <link rel="shortcut icon" href="reimage-small.png">
+  <link rel="apple-touch-icon" href="reimager.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta property="og:url" content="https://reimager.midway.ovh/">
+  <meta property="og:title" content="IMG ➮ YOUR IMG  | ReImager!">
+  <meta name="theme-color" content="#7d63ff">
+  <meta property="og:description" content="Zmień zdjęcia na stronach na jakie chcesz.
+  Zdjęcie ➮ Twoje zdjęcie">
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content="reimager.png">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>ReImager</title>
+  </head>
+  <body>
+    <div id="header"><a href="/"><img src="reimage-small.png" width="55px"><h1>ReImager</h1></a></div>
+    
+    <div class="share-button" onclick="copyText(this)">
+  <div class="text-wrapper">➥</div>
+</div>
+<div id="site">
+  <h1>Zmień zdjęcia w przeglądarce</h1>
+  <img src="reimager.png" width="200px">
+  <h2>Do tego narzędzia potrzebna jest wtyczka Tampermonkey do przeglądarki.
+   <br><br><br>Poradnik Instalacji:<br><br>1.Kliknij na Tampermonkey na pasku rozrzerzeń i kliknij "dodaj nowy skrypt..."<br>2.Usuń cały kod i dodaj mój kod z tabelki poniżej<br>3.Plik > zapisz i wróć do kodu a następnie w ustawieniach skryptu przełącz "Uruchom po..." na "document-start"<br>4.Jeśli chcesz możesz zmienić podmieniany obraz w img.src<br>5.Gotowe, sprawdź czy właczony jest skrypt, zdjęcia powinny być podmieniane </h2>
+  <table>
+  <tr>
+    <th></th>
+    <th>Chrome</th>
+    <th>Opera</th>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td><a href="https://github.com/MidWay-Projects/ReImager/blob/main/changer-chrome-win.js" target="_blank">➥</a></td>
+    <td><a href="https://github.com/MidWay-Projects/ReImager/blob/main/changer-opera-win.js" target="_blank">➥</a></td>
+  </tr>
+  <tr>
+    <td>Linux</td>
+    <td><a href="https://github.com/MidWay-Projects/ReImager/blob/main/changer-chrome-linux.js" target="_blank">➥</a></td>
+    <td>X</td>
+  </tr>
+  </table><br><br><br></div>
+  <footer><a href="/LICENSE">Copyright ReImager 2024</a><br><br><a href="https://github.com/MidWay-Projects/ReImager/tree/main">Github Repo</a></footer>
+    
+    
+<script>
+function copyText(button) {
+  const textToCopy = "https://reimager.midway.ovh/";
+  const textWrapper = button.querySelector('.text-wrapper');
+  function handleClick() {
+    textWrapper.style.transition = 'none';
+    textWrapper.style.transform = 'rotate(0deg)';
+    setTimeout(function() {
+      textWrapper.style.transition = 'transform 0.5s ease';
+      textWrapper.style.transform = 'rotate(360deg)';
+    }, 10);
+  }
+  button.addEventListener('click', handleClick);
+  textWrapper.addEventListener('transitionend', function() {
+    textWrapper.style.transition = 'none';
+  });
+  navigator.clipboard.writeText(textToCopy).then(function() {
+    handleClick();
+  }, function(err) {
+    console.error('Copy failed: ', err);
+  });
+}
+</script>
+  </body>
+</html>
