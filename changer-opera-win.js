@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Reimager | Changer | Opera | Win |
-// @icon https://reimager.midway.ovh/reimage.png
+// @icon https://reimager.midway.ovh/reimager.png
 // @author Scorbunny
 // @namespace   https://github.com/MidWay-Projects/ReImager/tree/main
 // @version     1.3
