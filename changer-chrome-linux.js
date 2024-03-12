@@ -8,7 +8,7 @@
 // @include     http://*/*
 // @include     https://*/*
 // @grant GM_addStyle
-// @updateURL   https://raw.githubusercontent.com/MidWay-Projects/ReImager/main/code.js
+// @updateURL   https://raw.githubusercontent.com/MidWay-Projects/ReImager/main/changer-opera-win.js
 // @downloadURL https://raw.githubusercontent.com/MidWay-Projects0/ReImager/main/changer-chrome-linux.js
 // @homepage    https://raw.github.com/MidWay-Projects/ReImager/tree/main
 // @supportURL  https://github.com/MidWay-Projects/ReImager/issues
