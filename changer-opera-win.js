@@ -30,6 +30,6 @@ window.onload = function() {
   const style = document.createElement('style');
   style.textContent = css;
   document.head.appendChild(style);
-  console.log("Gigachaded");
+  console.log("reimaged");
 };
 // >>>>>>> Dziala tylko na Tampermokney
