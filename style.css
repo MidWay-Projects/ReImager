@@ -74,6 +74,7 @@ a{
   width: 20px;
   height: 20px;
   padding: 10px;
+  z-index: 1000;
 }
 
 .text-wrapper {
