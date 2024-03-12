@@ -18,7 +18,7 @@ window.onload = function() {
   images.forEach(img => {
     const originalWidth = img.offsetWidth;
     const originalHeight = img.offsetHeight;
-    img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
+    img.src = 'https://reimager.midway.ovh/reimager.png';
     img.style.width = originalWidth + 'px';
     img.style.height = originalHeight + 'px';
   });
